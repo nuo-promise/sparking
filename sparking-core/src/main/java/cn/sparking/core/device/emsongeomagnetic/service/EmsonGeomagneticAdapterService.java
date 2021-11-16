@@ -15,20 +15,26 @@
  * limitations under the License.
  */
 
-package cn.sparking.bootstrap.threadpool;
+package cn.sparking.core.device.emsongeomagnetic.service;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.aop.interceptor.AsyncUncaughtExceptionHandler;
+import cn.sparking.common.constant.EmsonGeomagneticConstants;
+import cn.sparking.core.pattern.AdaptedService;
+import org.springframework.stereotype.Component;
 
-import java.lang.reflect.Method;
+@Component
+public class EmsonGeomagneticAdapterService extends AdaptedService {
 
-public class AsyncExceptionHandler implements AsyncUncaughtExceptionHandler {
-
-    private static final Logger LOG = LoggerFactory.getLogger(AsyncExceptionHandler.class);
+    EmsonGeomagneticAdapterService() {
+        super(EmsonGeomagneticConstants.EMSON_GEOMAGNETIC_ADAPTER_SERVICE);
+    }
 
     @Override
-    public void handleUncaughtException(final Throwable ex, final Method method, final Object... params) {
-        LOG.error("Exception occurs in async method : {},{}", method, ex);
+    protected String adapted(final String parameters) {
+        return null;
+    }
+
+    @Override
+    protected String antiAdapted(final String parameters) {
+        return null;
     }
 }

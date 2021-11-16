@@ -17,7 +17,7 @@
 
 package cn.sparking.bootstrap.result;
 
-import cn.sparking.bootstrap.exception.CommonErrorCode;
+import cn.sparking.common.exception.CommonErrorCode;
 import org.springframework.http.HttpStatus;
 
 import java.io.Serializable;

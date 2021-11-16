@@ -16,19 +16,29 @@
  */
 
 package cn.sparking.bootstrap;
-import cn.sparking.bootstrap.configuration.properties.ThreadPoolProperties;
+
+import cn.sparking.bootstrap.logo.SparkingLogo;
+import org.springframework.boot.ApplicationArguments;
+import org.springframework.boot.ApplicationRunner;
+import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
-@SpringBootApplication
-@EnableConfigurationProperties(ThreadPoolProperties.class)
-public class SparkingBootstrapApplication {
+@SpringBootApplication(scanBasePackages = {"cn.sparking.core"})
+public class SparkingBootstrapApplication implements ApplicationRunner {
+
     /**
      * Spring Boot Application.
      * @param args {@link String}
      */
     public static void main(final String[] args) {
-        SpringApplication.run(SparkingBootstrapApplication.class, args);
+        SpringApplication springApplication = new SpringApplication(SparkingBootstrapApplication.class);
+        springApplication.setBannerMode(Banner.Mode.OFF);
+        springApplication.run(args);
+    }
+
+    @Override
+    public void run(final ApplicationArguments args) throws Exception {
+        SparkingLogo.displayLogo();
     }
 }

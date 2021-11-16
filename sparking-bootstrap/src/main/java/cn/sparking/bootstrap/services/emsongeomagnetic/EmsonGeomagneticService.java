@@ -15,37 +15,17 @@
  * limitations under the License.
  */
 
-package cn.sparking.bootstrap.exception;
+package cn.sparking.bootstrap.services.emsongeomagnetic;
 
-/**
- * SerializerException.
- */
-public class SerializerException extends RuntimeException {
-    private static final long serialVersionUID = 8068509879445395353L;
+import cn.sparking.bootstrap.result.emsongeomagnetic.EmsonGeomagneticResponse;
+import com.alibaba.fastjson.JSONObject;
 
-    /**
-     * Instantiates a new Serializer exception.
-     * @param throwable the throwable
-     */
-    public SerializerException(final Throwable throwable) {
-       super(throwable);
-    }
+public interface EmsonGeomagneticService {
 
     /**
-     * Instantiates a new Serializer exception.
-     * @param message the message
+     * deal EmsonGeomagnetic processApi.
+     * @param jsonObject request obj
+     * @return {@link EmsonGeomagneticResponse}
      */
-    public SerializerException(final String message) {
-       super(message);
-    }
-
-    /**
-     * Instantiates a new Serializer exception.
-     * @param message the message
-     * @param throwable the throwable
-     */
-    public SerializerException(final String message, final Throwable throwable) {
-       super(message, throwable);
-    }
+    EmsonGeomagneticResponse processApi(JSONObject jsonObject);
 }
-

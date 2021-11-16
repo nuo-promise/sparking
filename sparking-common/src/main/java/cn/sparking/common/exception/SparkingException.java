@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package cn.sparking.bootstrap.exception;
+package cn.sparking.common.exception;
 
-public class ShuBoException extends RuntimeException {
+public class SparkingException extends RuntimeException {
     private static final long serialVersionUID = 8068509879445395353L;
 
     /**
      * Instantiates a new Spk exception.
      * @param throwable the throwable
      */
-    public ShuBoException(final Throwable throwable) {
+    public SparkingException(final Throwable throwable) {
         super(throwable);
     }
 
@@ -32,7 +32,7 @@ public class ShuBoException extends RuntimeException {
      * Instantiates a new Spk exception.
      * @param message the message
      */
-    public ShuBoException(final String message) {
+    public SparkingException(final String message) {
         super(message);
     }
 
@@ -41,7 +41,7 @@ public class ShuBoException extends RuntimeException {
      * @param message the message
      * @param throwable the throwable
      */
-    public ShuBoException(final String message, final Throwable throwable) {
+    public SparkingException(final String message, final Throwable throwable) {
         super(message, throwable);
     }
 }

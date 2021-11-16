@@ -15,20 +15,37 @@
  * limitations under the License.
  */
 
-package cn.sparking.bootstrap.exception;
+package cn.sparking.common.exception;
 
 /**
- * CommonErrorCode.
+ * SerializerException.
  */
-public class CommonErrorCode {
+public class SerializerException extends RuntimeException {
+    private static final long serialVersionUID = 8068509879445395353L;
 
     /**
-     * The constant SUCCESS.
+     * Instantiates a new Serializer exception.
+     * @param throwable the throwable
      */
-    public static final int SUCCESS = 200;
+    public SerializerException(final Throwable throwable) {
+       super(throwable);
+    }
 
     /**
-     * The constant ERROR.
+     * Instantiates a new Serializer exception.
+     * @param message the message
      */
-    public static final int ERROR = 500;
+    public SerializerException(final String message) {
+       super(message);
+    }
+
+    /**
+     * Instantiates a new Serializer exception.
+     * @param message the message
+     * @param throwable the throwable
+     */
+    public SerializerException(final String message, final Throwable throwable) {
+       super(message, throwable);
+    }
 }
+

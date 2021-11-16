@@ -16,6 +16,8 @@
 server:
   port: 25902
   address: 0.0.0.0
+  servlet:
+    context-path: /sparking
 # rabbitmq settings
 spring:
   rabbitmq:

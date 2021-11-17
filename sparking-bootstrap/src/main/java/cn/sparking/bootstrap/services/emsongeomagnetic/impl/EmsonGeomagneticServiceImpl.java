@@ -17,7 +17,6 @@
 
 package cn.sparking.bootstrap.services.emsongeomagnetic.impl;
 
-import cn.sparking.bootstrap.configuration.RabbitMqConfiguration;
 import cn.sparking.bootstrap.result.emsongeomagnetic.EmsonGeomagneticResponse;
 import cn.sparking.bootstrap.services.emsongeomagnetic.EmsonGeomagneticService;
 import cn.sparking.common.constant.EmsonGeomagneticConstants;
@@ -56,7 +55,7 @@ public class EmsonGeomagneticServiceImpl implements EmsonGeomagneticService {
             }
 
         } catch (SparkingException e) {
-           LOG.error(EmsonGeomagneticConstants.EMSON_GEOMAGNETIC_FLAG + " processApi Error: " + e);
+            LOG.error(EmsonGeomagneticConstants.EMSON_GEOMAGNETIC_FLAG + " processApi Error: " + e);
         }
 
         return null;

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package cn.sparking.bootstrap.configuration.properties;
+package cn.sparking.core.configuration.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;

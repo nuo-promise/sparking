@@ -60,6 +60,7 @@
         <commons-lang3.version>3.3.2</commons-lang3.version>
         <commons-collections4.version>4.1</commons-collections4.version>
         <guava.version>[30.1-jre,)</guava.version>
+        <commons-collections.version>1.0</commons-collections.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -85,6 +86,11 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>${commons-codec.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -124,6 +130,10 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-pool2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
         </dependency>
         <dependency>
             <groupId>io.netty</groupId>

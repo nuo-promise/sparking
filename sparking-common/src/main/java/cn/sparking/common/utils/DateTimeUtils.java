@@ -15,26 +15,28 @@
  * limitations under the License.
  */
 
-package cn.sparking.core.device.emsongeomagnetic.service;
+package cn.sparking.common.utils;
 
-import cn.sparking.common.constant.EmsonGeomagneticConstants;
-import cn.sparking.core.pattern.AdaptedService;
-import org.springframework.stereotype.Component;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
-@Component
-public class EmsonGeomagneticAdapterService extends AdaptedService {
+public class DateTimeUtils {
 
-    EmsonGeomagneticAdapterService() {
-        super(EmsonGeomagneticConstants.EMSON_GEOMAGNETIC_ADAPTER_SERVICE);
+    private static SimpleDateFormat timestampFormat;
+
+    static {
+        timestampFormat = new SimpleDateFormat("yyyyMMddHHmmssSSS");
     }
 
-    @Override
-    protected String adapted(final String parameters) {
-        return null;
+    /**
+     * get current time string.
+     * @return String
+     */
+    public static String timestamp() {
+        return timestampFormat.format(currentTime());
     }
 
-    @Override
-    protected String antiAdapted(final String parameters) {
-        return null;
+    private static Date currentTime() {
+        return new Date();
     }
 }

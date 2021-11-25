@@ -47,7 +47,7 @@ public class AdaptedFactory implements ApplicationContextAware {
      * @param beanName adapted bean name
      * @return {@link AdaptedService}
      */
-    public static AdaptedService getAdaptedService(final String beanName) {
+    public AdaptedService getAdaptedService(final String beanName) {
         return adaptedServiceMap.get(beanName);
     }
 }

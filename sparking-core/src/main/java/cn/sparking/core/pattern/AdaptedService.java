@@ -32,7 +32,15 @@ public abstract class AdaptedService {
         return serviceName;
     }
 
-    protected abstract String adapted(String parameters);
+    /**
+     * agreement adapted.
+     * @param parameters {@link Object}
+     */
+    public abstract void adapted(Object parameters);
 
-    protected abstract String antiAdapted(String parameters);
+    /**
+     * agreement anti-adapted.
+     * @param parameters {@link Object}
+     */
+    public abstract void antiAdapted(Object parameters);
 }

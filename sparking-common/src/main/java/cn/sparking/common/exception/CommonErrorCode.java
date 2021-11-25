@@ -23,6 +23,11 @@ package cn.sparking.common.exception;
 public class CommonErrorCode {
 
     /**
+     * The constant MQ SUCCESS.
+     */
+    public static final String MQ_SUCCESS = "00000";
+
+    /**
      * The constant SUCCESS.
      */
     public static final int SUCCESS = 200;
@@ -31,4 +36,7 @@ public class CommonErrorCode {
      * The constant ERROR.
      */
     public static final int ERROR = 500;
+
+
+
 }

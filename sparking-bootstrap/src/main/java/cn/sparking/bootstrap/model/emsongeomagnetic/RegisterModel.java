@@ -26,10 +26,6 @@ public class RegisterModel implements Serializable {
 
     private static final long serialVersionUID = -6602376404663761442L;
 
-    /**
-     * 指令编码.
-     */
-    private String cmd;
 
     /**
      * 停车场编号.
@@ -56,13 +52,6 @@ public class RegisterModel implements Serializable {
      */
     private String token;
 
-    /**
-     * get cmd.
-     * @return the cmd
-     */
-    public String getCmd() {
-        return cmd;
-    }
 
     /**
      * get park id.
@@ -104,13 +93,6 @@ public class RegisterModel implements Serializable {
         return token;
     }
 
-    /**
-     * Set cmd.
-     * @param cmd the cmd
-     */
-    public void setCmd(final String cmd) {
-        this.cmd = cmd;
-    }
 
     /**
      * Set parkID.

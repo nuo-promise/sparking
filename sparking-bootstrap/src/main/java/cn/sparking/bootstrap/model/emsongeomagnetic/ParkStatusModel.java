@@ -26,10 +26,6 @@ public class ParkStatusModel implements Serializable {
 
     private static final long serialVersionUID = 6240827859689786159L;
 
-    /**
-     * 指令编码.
-     */
-    private String cmd;
 
     /**
      * 停车场编号.
@@ -76,13 +72,6 @@ public class ParkStatusModel implements Serializable {
      */
     private String token;
 
-    /**
-     * Get cmd.
-     * @return the cmd
-     */
-    public String getCmd() {
-        return cmd;
-    }
 
     /**
      * Get parkingId.
@@ -156,13 +145,6 @@ public class ParkStatusModel implements Serializable {
         return token;
     }
 
-    /**
-     * Set cmd.
-     * @param cmd the cmd
-     */
-    public void setCmd(final String cmd) {
-        this.cmd = cmd;
-    }
 
     /**
      * Set park id.

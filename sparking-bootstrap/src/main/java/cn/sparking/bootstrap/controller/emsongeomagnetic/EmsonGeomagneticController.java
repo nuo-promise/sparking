@@ -17,6 +17,7 @@
 
 package cn.sparking.bootstrap.controller.emsongeomagnetic;
 
+import cn.sparking.bootstrap.model.emsongeomagnetic.EmsonGeomagneticRequest;
 import cn.sparking.bootstrap.result.emsongeomagnetic.EmsonGeomagneticResponse;
 import cn.sparking.bootstrap.services.emsongeomagnetic.EmsonGeomagneticService;
 
@@ -38,11 +39,11 @@ public class EmsonGeomagneticController {
 
     /**
      * process api.
-     * @param jsonObject request params
+     * @param emsonRequest request params
      * @return {@link EmsonGeomagneticResponse}
      */
     @PostMapping(value = "/api")
-    public EmsonGeomagneticResponse processApi(@RequestBody final JSONObject jsonObject) {
-        return emsonGeomagneticService.processApi(jsonObject);
+    public EmsonGeomagneticResponse processApi(@RequestBody final EmsonGeomagneticRequest<Object> emsonRequest) {
+        return emsonGeomagneticService.processApi(emsonRequest);
     }
 }

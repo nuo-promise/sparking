@@ -15,21 +15,32 @@
  * limitations under the License.
  */
 
-package cn.sparking.bootstrap.services.emsongeomagnetic;
+package cn.sparking.core.mq;
 
-import cn.sparking.bootstrap.model.emsongeomagnetic.EmsonGeomagneticRequest;
-import cn.sparking.bootstrap.result.emsongeomagnetic.EmsonGeomagneticResponse;
+import java.io.Serializable;
 
 /**
- * EmsonGeomagnetic interface .
+ * MQ Basic Data.
  */
-public interface EmsonGeomagneticService {
+public class BaseMQData implements Serializable {
 
-    /**
-     * deal EmsonGeomagnetic processApi.
-     *
-     * @param emsonRequest request obj
-     * @return {@link EmsonGeomagneticResponse}
-     */
-    EmsonGeomagneticResponse processApi(EmsonGeomagneticRequest<Object> emsonRequest);
+    private static final long serialVersionUID = 2367432151266974028L;
+
+    private String from;
+
+    private String type;
+
+    public BaseMQData() {
+
+    }
+
+    public BaseMQData(final String from, final String type) {
+        this.from = from;
+        this.type = type;
+    }
+
+    @Override
+    public String toString() {
+        return "BasicMQData{" + "from ='" + from + '\'' + ", type='" + type + '\'' + '}';
+    }
 }

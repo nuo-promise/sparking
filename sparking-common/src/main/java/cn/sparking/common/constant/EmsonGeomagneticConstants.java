@@ -20,6 +20,16 @@ package cn.sparking.common.constant;
 public class EmsonGeomagneticConstants implements Constants {
 
     /**
+     * data version.
+     */
+    public static final String EMSON_VERSION = "1.0";
+
+    /**
+     * data character.
+     */
+    public static final String EMSON_CHARACTER = "UTF-8";
+
+    /**
      * EMSON flag.
      */
     public static final String EMSON_GEOMAGNETIC_FLAG = "EmsonGeomagnetic";
@@ -30,7 +40,54 @@ public class EmsonGeomagneticConstants implements Constants {
     public static final String EMSON_GEOMAGNETIC_ADAPTER_SERVICE = "EmsonGeomagneticAdapterService";
 
     /**
-     * EMSON request cmd.
+     * EMSON Register cmd.
      */
-    public static final String EMSON_GEOMAGNETIC_REQUEST_CMD = "cmd";
+    public static final String EMSON_GEOMAGNETIC_REGISTER = "SendRegister";
+
+    /**
+     * EMSON Heart cmd.
+     */
+    public static final String EMSON_GEOMAGNETIC_HEART = "sendDeviceHeartbeat";
+
+    /**
+     * EMSON Park Status cmd.
+     */
+    public static final String EMSON_GEOMAGNETIC_STATUS = "sendParkStatu";
+
+    /**
+     * EMSON MQ REGISTER.
+     */
+    public static final String EMSON_MQ_METHOD_REGISTER = "REGISTER";
+
+    /**
+     * EMSON MQ HEARTBEAT.
+     */
+    public static final String EMSON_MQ_METHOD_HEARTBEAT = "HEARTBEAT";
+
+    /**
+     * EMSON MQ PARK STATUS.
+     */
+    public static final String EMSON_MQ_METHOD_PARK_STATUS = "PARK_STATUS";
+
+    /**
+     * EMSON MQ DEVICE EVENT.
+     */
+    public static final String EMSON_MQ_METHOD_DEVICE_EVENT = "EVENT";
+
+    /**
+     * EMSON DEVICE ONLINE.
+     */
+    public static final String EMSON_DEVICE_ONLINE = "ONLINE";
+
+    /**
+     * EMSON DEVICE OFFLINE.
+     */
+    public static final String EMSON_DEVICE_OFFLINE = "OFFLINE";
+
+    /**
+     * EMSON ERROR 101.
+     */
+    public static final int EMSON_ERROR_101 = 101;
+
+    public static final String EMSON_ERROR_101_MSG = "Data Valid Failed";
 }

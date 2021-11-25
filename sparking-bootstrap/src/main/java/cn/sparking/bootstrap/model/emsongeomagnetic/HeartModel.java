@@ -26,10 +26,6 @@ public class HeartModel implements Serializable {
 
     private static final long serialVersionUID = 5673277872922057503L;
 
-    /**
-     * 指令编码.
-     */
-    private String cmd;
 
     /**
      * 停车场编号.
@@ -78,13 +74,6 @@ public class HeartModel implements Serializable {
 
     HeartModel() {
 
-    }
-    /**
-     * get cmd.
-     * @return the cmd
-     */
-    public String getCmd() {
-        return cmd;
     }
 
     /**
@@ -231,11 +220,4 @@ public class HeartModel implements Serializable {
         this.token = token;
     }
 
-    /**
-     * Set cmd.
-     * @param cmd the cmd
-     */
-    public void setCmd(final String cmd) {
-        this.cmd = cmd;
-    }
 }

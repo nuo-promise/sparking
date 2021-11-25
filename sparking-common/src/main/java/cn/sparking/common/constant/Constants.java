@@ -28,6 +28,16 @@ public interface Constants {
     String LINE_SEPARATOR = System.getProperty("line.separator");
 
     /**
+     * the constant PARK FREE Status.
+     */
+    String SPARK_PARK_STATUS_FREE = "FREE";
+
+    /**
+     * the constant PARK UNFREE Status.
+     */
+    String SPARK_PARK_STATUS_NO_FREE = "UNFREE";
+
+    /**
      * default find Constants.
      */
     default void findConstants() {

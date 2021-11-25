@@ -36,8 +36,9 @@ public class EmsonGeomagneticResponse implements Serializable {
      */
     private Body body;
 
-    EmsonGeomagneticResponse() {
-
+    public EmsonGeomagneticResponse(final Integer code, final Body body) {
+        this.code = code;
+        this.body = body;
     }
 
     /**
@@ -72,15 +73,23 @@ public class EmsonGeomagneticResponse implements Serializable {
         this.body = body;
     }
 
+    @Override
+    public String toString() {
+        return "EmsonGeomagneticResponse { code= " + code + ", body -> msg= " + body.getMsg() + "}";
+    }
+
     /**
      * Body.
      */
     public static final class Body {
-
         /**
          * msg.
          */
         private String msg;
+
+        public Body(final String msg) {
+            this.msg = msg;
+        }
 
         /**
          * Get msg.

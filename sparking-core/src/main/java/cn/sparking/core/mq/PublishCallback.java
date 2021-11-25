@@ -17,28 +17,11 @@
 
 package cn.sparking.core.mq;
 
-import java.io.Serializable;
+public interface PublishCallback {
 
-public class BasicMQData implements Serializable {
-
-    private static final long serialVersionUID = 2367432151266974028L;
-
-    private String collectionName;
-
-    private String type;
-
-    public BasicMQData() {
-
-    }
-
-    public BasicMQData(final String collectionName, final String type) {
-        this.collectionName = collectionName;
-        this.type = type;
-    }
-
-    @Override
-    public String toString() {
-        return "BasicMQData{" + "collectionName='" + collectionName + '\'' + ", type='" + type + '\'' + '}';
-    }
-
+    /**
+     * MQ call back.
+     * @param success the success
+     */
+    void handle(boolean success);
 }

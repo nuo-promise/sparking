@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package cn.sparking.bootstrap.configuration;
+package cn.sparking.core.configuration;
 
-import cn.sparking.bootstrap.configuration.properties.RabbitmqProperties;
+import cn.sparking.core.configuration.properties.RabbitmqProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.core.TopicExchange;

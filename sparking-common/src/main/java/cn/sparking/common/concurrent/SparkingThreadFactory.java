@@ -49,7 +49,7 @@ public class SparkingThreadFactory implements ThreadFactory {
      * @return {@linkplain ThreadFactory}
      */
     public static ThreadFactory create(final String namePrefix, final boolean daemon) {
-       return create(namePrefix, daemon, Thread.NORM_PRIORITY);
+        return create(namePrefix, daemon, Thread.NORM_PRIORITY);
     }
 
     /**

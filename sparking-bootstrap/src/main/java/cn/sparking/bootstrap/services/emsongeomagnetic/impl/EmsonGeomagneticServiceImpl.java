@@ -18,21 +18,20 @@
 package cn.sparking.bootstrap.services.emsongeomagnetic.impl;
 
 import cn.sparking.bootstrap.model.emsongeomagnetic.EmsonGeomagneticRequest;
-import cn.sparking.bootstrap.result.emsongeomagnetic.EmsonGeomagneticResponse;
-import cn.sparking.bootstrap.services.emsongeomagnetic.EmsonGeomagneticService;
-import cn.sparking.common.constant.EmsonGeomagneticConstants;
-import cn.sparking.common.exception.SparkingException;
 import cn.sparking.bootstrap.model.emsongeomagnetic.HeartModel;
 import cn.sparking.bootstrap.model.emsongeomagnetic.ParkStatusModel;
 import cn.sparking.bootstrap.model.emsongeomagnetic.RegisterModel;
+import cn.sparking.bootstrap.result.emsongeomagnetic.EmsonGeomagneticResponse;
 import cn.sparking.bootstrap.services.emsongeomagnetic.EmsonGeomagneticProducer;
+import cn.sparking.bootstrap.services.emsongeomagnetic.EmsonGeomagneticService;
+import cn.sparking.common.constant.EmsonGeomagneticConstants;
+import cn.sparking.common.exception.SparkingException;
 import cn.sparking.core.factory.AdaptedFactory;
 import cn.sparking.core.pattern.AdaptedService;
+import org.apache.commons.codec.digest.DigestUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.apache.commons.codec.digest.DigestUtils;
 
 import java.util.Optional;
 
@@ -47,7 +46,7 @@ public class EmsonGeomagneticServiceImpl implements EmsonGeomagneticService {
     private final AdaptedFactory adaptedFactory;
 
     public EmsonGeomagneticServiceImpl(final AdaptedService emsonGeomagneticAdapterService,
-                                       final EmsonGeomagneticProducer emsonGeomagneticProducer, AdaptedFactory adaptedFactory) {
+                                       final EmsonGeomagneticProducer emsonGeomagneticProducer, final AdaptedFactory adaptedFactory) {
         this.adaptedFactory = adaptedFactory;
     }
 

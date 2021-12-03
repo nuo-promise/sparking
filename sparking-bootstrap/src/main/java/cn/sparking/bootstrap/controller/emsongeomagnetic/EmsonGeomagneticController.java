@@ -20,8 +20,6 @@ package cn.sparking.bootstrap.controller.emsongeomagnetic;
 import cn.sparking.bootstrap.model.emsongeomagnetic.EmsonGeomagneticRequest;
 import cn.sparking.bootstrap.result.emsongeomagnetic.EmsonGeomagneticResponse;
 import cn.sparking.bootstrap.services.emsongeomagnetic.EmsonGeomagneticService;
-
-import com.alibaba.fastjson.JSONObject;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

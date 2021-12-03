@@ -7,7 +7,7 @@ target/
 *.tar
 *.tar.gz
 dependency-reduced-pom.xml
-.mvn/
+
 # maven plugin ignore
 release.properties
 cobertura.ser

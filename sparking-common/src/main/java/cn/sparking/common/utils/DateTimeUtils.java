@@ -22,10 +22,10 @@ import java.util.Date;
 
 public class DateTimeUtils {
 
-    private static SimpleDateFormat timestampFormat;
+    private static final SimpleDateFormat TIMESTAMPFORMAT;
 
     static {
-        timestampFormat = new SimpleDateFormat("yyyyMMddHHmmssSSS");
+        TIMESTAMPFORMAT = new SimpleDateFormat("yyyyMMddHHmmssSSS");
     }
 
     /**
@@ -33,7 +33,7 @@ public class DateTimeUtils {
      * @return String
      */
     public static String timestamp() {
-        return timestampFormat.format(currentTime());
+        return TIMESTAMPFORMAT.format(currentTime());
     }
 
     private static Date currentTime() {

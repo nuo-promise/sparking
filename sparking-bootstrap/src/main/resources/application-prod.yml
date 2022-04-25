@@ -39,7 +39,12 @@ spring:
         max-wait: 1000
 spk:
   pool:
-    core_poolsize: 8
-    max_poolsize: 300
-    keepaliveseconds: 360
-    queue_capacity: 1000
+    core-size: 8
+    max-size: 300
+    keep-alive: 360
+    queue-capacity: 1000
+  lock:
+    move-broad:
+      active: true
+        app-id: 111111
+        secret: 111111

@@ -24,6 +24,14 @@ spring:
         max-idle: 10
         min-idle: 5
         max-wait: 1000
+  data:
+    mongodb:
+      host: 47.98.44.236
+      port: 27017
+      database: suparking_device
+      username: device
+      password: device2019
+      authentication-database: admin
 spk:
   pool:
     core-size: 8

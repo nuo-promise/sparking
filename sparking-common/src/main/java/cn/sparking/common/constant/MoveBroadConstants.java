@@ -5,6 +5,8 @@ package cn.sparking.common.constant;
  */
 public class MoveBroadConstants implements Constants {
 
+    public static final String MOVE_BROAD_ADAPTER_SERVICE = "MoveBroadAdapterService";
+
     public static final String MB_CMD_LOCK_CONTROL = "LockControl";
 
     public static final String MB_CMD_SET_LOCK_MODE = "SetLockMode";

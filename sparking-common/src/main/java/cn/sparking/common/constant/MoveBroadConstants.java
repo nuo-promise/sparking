@@ -5,11 +5,27 @@ package cn.sparking.common.constant;
  */
 public class MoveBroadConstants implements Constants {
 
+    public static final String MB_TYPE = "MOVEBROAD";
+
+    public static final String MB_LOCK_FLAG = "MoveBroad";
+
+    public static final String MB_VERSION = "V1.0";
+
+    public static final String MB_CHARACTER = "UTF-8";
+
     public static final String MOVE_BROAD_ADAPTER_SERVICE = "MoveBroadAdapterService";
 
     public static final String MB_CMD_LOCK_CONTROL = "LockControl";
 
     public static final String MB_CMD_SET_LOCK_MODE = "SetLockMode";
+
+    public static final String MB_REQUEST_TMOTEINFO = "TMoteInfo";
+
+    public static final String MB_REQUEST_TMOTESTATUS = "TMoteStatus";
+
+    public static final String MOVE_BROAD_MQ_METHOD_LOCK_STATUS = "LOCK-STATUS";
+
+    public static final String MOVE_BROAD_MQ_METHOD_LOCK_INFO = "LOCK-INFO";
 
     public static final int MB_LOCK_CONTROL_ACTION_UP = 0;
 

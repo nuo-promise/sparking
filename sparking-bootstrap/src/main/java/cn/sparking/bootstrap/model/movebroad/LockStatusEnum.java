@@ -18,14 +18,14 @@ public enum LockStatusEnum {
     STATUS_UP_NO_FREEING_3(3, false, "UP", "持续占用"),
     STATUS_UP_NO_FREEING_11(11, false, "UP", "持续占用"),
 
-    STATUS_UP_FREE_4(4, false, "DOWN", "空闲"),
-    STATUS_UP_FREE_12(12, false, "DOWN", "空闲"),
-    STATUS_UP_FREEING_6(6, false, "DOWN", "持续空闲"),
-    STATUS_UP_FREEING_14(14, false, "DOWN", "持续空闲"),
-    STATUS_UP_NO_FREE_5(5, false, "DOWN", "占用"),
-    STATUS_UP_NO_FREE_13(13, false, "DOWN", "占用"),
-    STATUS_UP_NO_FREEING_7(7, false, "DOWN", "持续占用"),
-    STATUS_UP_NO_FREEING_15(15, false, "DOWN", "持续占用"),
+    STATUS_DOWN_FREE_4(4, false, "DOWN", "空闲"),
+    STATUS_DOWN_FREE_12(12, false, "DOWN", "空闲"),
+    STATUS_DOWN_FREEING_6(6, false, "DOWN", "持续空闲"),
+    STATUS_DOWN_FREEING_14(14, false, "DOWN", "持续空闲"),
+    STATUS_DOWN_NO_FREE_5(5, false, "DOWN", "占用"),
+    STATUS_DOWN_NO_FREE_13(13, false, "DOWN", "占用"),
+    STATUS_DOWN_NO_FREEING_7(7, false, "DOWN", "持续占用"),
+    STATUS_DOWN_NO_FREEING_15(15, false, "DOWN", "持续占用"),
 
     STATUS_UP_FREE_16(16, true, "UP", "空闲"),
     STATUS_UP_FREE_24(24, true, "UP", "空闲"),
@@ -36,14 +36,14 @@ public enum LockStatusEnum {
     STATUS_UP_NO_FREEING_19(19, true, "UP", "持续占用"),
     STATUS_UP_NO_FREEING_27(27, true, "UP", "持续占用"),
 
-    STATUS_UP_FREE_20(20, true, "DOWN", "空闲"),
-    STATUS_UP_FREE_28(28, true, "DOWN", "空闲"),
-    STATUS_UP_FREEING_22(22, true, "DOWN", "持续空闲"),
-    STATUS_UP_FREEING_30(30, true, "DOWN", "持续空闲"),
-    STATUS_UP_NO_FREE_21(21, true, "DOWN", "占用"),
-    STATUS_UP_NO_FREE_29(29, true, "DOWN", "占用"),
-    STATUS_UP_NO_FREEING_23(23, true, "DOWN", "持续占用"),
-    STATUS_UP_NO_FREEING_31(31, true, "DOWN", "持续占用");
+    STATUS_DOWN_FREE_20(20, true, "DOWN", "空闲"),
+    STATUS_DOWN_FREE_28(28, true, "DOWN", "空闲"),
+    STATUS_DOWN_FREEING_22(22, true, "DOWN", "持续空闲"),
+    STATUS_DOWN_FREEING_30(30, true, "DOWN", "持续空闲"),
+    STATUS_DOWN_NO_FREE_21(21, true, "DOWN", "占用"),
+    STATUS_DOWN_NO_FREE_29(29, true, "DOWN", "占用"),
+    STATUS_DOWN_NO_FREEING_23(23, true, "DOWN", "持续占用"),
+    STATUS_DOWN_NO_FREEING_31(31, true, "DOWN", "持续占用");
 
     private final Integer code;
     private final Boolean warn;

@@ -12,15 +12,13 @@ import java.io.Serializable;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class LockStatusRequest implements Serializable {
+public class LockInfoRequest implements Serializable {
 
-    private static final long serialVersionUID = -4424530318391366403L;
+    private static final long serialVersionUID = 1925381908457336770L;
 
     private String sn;
 
-    private String berthCode;
-
     private String name;
 
-    private JSONObject tMoteStatus;
+    private JSONObject tMoteInfo;
 }
